@@ -58,5 +58,32 @@ Shadowsocks-libev 版：
 
 > 对应 启动，停止，重启，查看状态。
 
-版本变更等具体信息可见：\[[https://teddysun.com/486.html\]\(https://teddysun.com/486.html\](https://teddysun.com/486.html]%28https://teddysun.com/486.html\)\)
+多个rsa认证配置
+
+```
+cd .ssh
+ssh-keygen -t rsa -C "你的邮箱地址"
+```
+
+已有rsa会弹出
+
+```
+Enter file in which to save the key (/Users/admin/.ssh/id_rsa):
+```
+
+输入不同名字进行区分
+
+修改`.ssh/config`配置
+
+```
+Host github.com
+User admin
+IdentityFile ~/.ssh/github_rsa
+
+Host code.csdn.net
+User admin
+IdentityFile ~/.ssh/id_rsa
+```
+
+版本变更等具体信息可见：\[[https://teddysun.com/486.html\]\(https://teddysun.com/486.html\](https://teddysun.com/486.html]%28https://teddysun.com/486.html%29\)
 
