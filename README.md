@@ -85,5 +85,5 @@ User admin
 IdentityFile ~/.ssh/id_rsa
 ```
 
-版本变更等具体信息可见: \[https://teddysun.com/486.html\]\(https://teddysun.com/486.html\)
+版本变更等具体信息可见: \[[https://teddysun.com/486.html\]\(https://teddysun.com/486.html](https://teddysun.com/486.html]%28https://teddysun.com/486.html\)\)
 
