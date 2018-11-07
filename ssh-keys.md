@@ -18,7 +18,7 @@ ssh-keygen -t rsa -b 4096
 
 > 确保`~/.ssh/id_rsa`文件备份，一旦丢失不可恢复！！！
 
-可以通过\[[https://my.vultr.com/sshkeys](https://my.vultr.com/sshkeys/)\]\([https://my.vultr.com/sshkeys](https://my.vultr.com/sshkeys/)\)地址复制密钥内容，方便后续VPS实例的初始化
+可以通过[https://my.vultr.com/sshkeys](https://my.vultr.com/sshkeys)地址复制密钥内容，方便后续VPS实例的初始化
 
 复制内容，可以通过命令
 
