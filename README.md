@@ -16,7 +16,11 @@ ssh root@ip
 
 ```bash
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+
+
 chmod +x shadowsocks-all.sh
+
+
 ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 ```
 
@@ -26,12 +30,30 @@ chmod +x shadowsocks-all.sh
 ./shadowsocks-all.sh uninstall
 ```
 
+### BBR
+
+```
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+
+chmod +x bbr.sh
+
+./bbr.sh
+```
+
+> 接着按任意键，开始安装，坐等一会。安装完成一会之后它会提示我们是否重新启动vps，我们输入 y 确定重启服务器。重新启动之后。输入
+
+```
+lsmod | grep bbr
+```
+
+> 如果看到 tcp\_bbr 就说明 BBR 已经启动了
+
 #### 启动脚本及配置文件
 
 Shadowsocks-Python 版：
 
 ```bash
-/etc/init.d/shadowsocks-python start | stop | restart | statu
+/etc/init.d/shadowsocks-python start | stop | restart | status
 /etc/shadowsocks-python/config.json
 ```
 
