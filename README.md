@@ -48,6 +48,12 @@ lsmod | grep bbr
 
 > 如果看到 tcp\_bbr 就说明 BBR 已经启动了
 
+### **ShadowsocksR如何修改端口和密码**
+
+```
+vi /etc/shadowsocks.json
+```
+
 #### 启动脚本及配置文件
 
 Shadowsocks-Python 版：
